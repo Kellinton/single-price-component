@@ -122,3 +122,101 @@ body .container div div:nth-child(2){
     height: 100%;
     padding: 5%;
 }
+
+@media screen and (max-width: 900px){
+    
+    body .container{  
+        width: 100%;
+        height: 100%;
+        box-shadow: var(--boxshadow);
+        border-radius: 50px  50px 50px 50px;
+    }
+    body .container div{
+        background-color: #fff;
+        padding: 5%;
+        width: 100%;
+        height: 30%;
+        border-radius: 0px;
+    }
+    body .container div h1{
+        color: var(--bgcolor01);
+        margin-bottom: 4%;
+    }
+    body .container div h3{
+        color: var(--neutralcolor02);
+        margin-bottom: 2%;
+    }
+    body .container div p{
+        color: var(--bgcolor02);
+        line-height: 25px;
+    }
+    
+    body .container div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    
+    body .container div div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        background-color: var(--bgcolor01);
+        border-radius: 0px;
+        overflow-x: hidden;
+    }
+    body .container div div h2{
+        color: var(--neutralcolor01);
+        margin-bottom: 4%;
+    }
+    body .container div div span{
+        color: var(--neutralcolor01);
+        font-size: 3rem;
+        position: relative;
+        margin-bottom: 4%;
+    }
+    body .container div div span::after{
+        position: absolute;
+        top: 40%;
+        right: -30%;
+        content: "per month";
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        color: var(--neutralcolor01);
+        font-weight: 400;
+    }
+    body .container div div p{
+        color: var(--neutralcolor01);
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    body .container div div a{
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: var(--boxshadow);
+        color: var(--neutralcolor01);
+        margin-top: 5%;
+        background-color: var(--neutralcolor02);
+        padding: 5%;
+        width: 100%;
+        
+    }
+    
+    body .container div div:nth-child(2){
+        background-color: var(--neutralcolor02);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+    }
+
+}
